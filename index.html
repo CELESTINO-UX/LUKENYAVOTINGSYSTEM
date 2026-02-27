@@ -2537,19 +2537,151 @@
       }
     };
     
-    // Data Structures
+    // Data Structures - UPDATED WITH NEW POSITIONS AND CANDIDATES FROM PDF
     let positions = [
+      // Existing positions
       "Head Boy", "Head Girl", "Boys' Dorm Captain", "Girls' Dorm Captain",
-      "Boys' Entertainment Prefect", "Girls' Entertainment Prefect", "Boys' Sports Prefect",
-      "Girls' Sports Prefect", "Boys' Dining Prefect", "Girls' Dining Prefect",
-      "Boys' Chapel Prefect", "Girls' Chapel Prefect", "KS3 Representative",
-      "KS4 Representative", "Academic Prefect", "Library Prefect",
-      "Environmental Prefect", "Health & Sanitation Prefect", "Transport Prefect"
+      "Boys' Entertainment Prefect", "Girls' Entertainment Prefect", 
+      "Boys' Sports Prefect", "Girls' Sports Prefect",
+      "Boys' Dining Prefect", "Girls' Dining Prefect",
+      "Boys' Chapel Prefect", "Girls' Chapel Prefect", 
+      "KS3 Representative", "KS4 Representative", 
+      "Academic Prefect", "Library Prefect",
+      "Environmental Prefect", "Health & Sanitation Prefect", "Transport Prefect",
+      
+      // NEW POSITIONS FROM PDF
+      "Boys' Sports and Co-curriculum",
+      "Girls' Sports and Co-curriculum",
+      "Boys' Chapel",
+      "Girl Environment",
+      "Boy Environment"
     ];
     
     let voters = {
-      student: [],
-      staff: []
+      student: [
+        // Page 1
+        { name: "Daniel Ingati", id: "STU007", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Griffins Muoki", id: "STU008", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Carlsam Suri", id: "STU010", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Blessings Natasha", id: "STU011", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Paul Charles", id: "STU017", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Mariebell G", id: "STU018", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Gabriel Vigne", id: "STU021", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Dennis Wisdom", id: "STU022", class: "8", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Aloysius Jude", id: "STU024", class: "8", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tim Mburu", id: "STU001", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Wesley Agina", id: "STU002", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kennedy Mutitu", id: "STU003", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Adrian Francis", id: "STU004", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Zackary Mbithi", id: "STU005", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Glen Collins", id: "STU006", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Alex Garang", id: "STU012", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Darren Mitch", id: "STU013", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Mwendwa Magutu", id: "STU014", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Majak Garang", id: "STU015", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Brian Owino", id: "STU023", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Edmund Munyoki", id: "STU019", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kelvin Solitei", id: "STU029", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Wesly Weke", id: "STU030", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Chris Linus", id: "STU031", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Ganyang Hoth", id: "STU032", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Felix Karia", id: "STU033", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Mathew Paita", id: "STU034", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Samir Simal", id: "STU035", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Trevor Amani", id: "STU037", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        // Page 2
+        { name: "Kelvin Emilian", id: "STU038", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Elvis Henry", id: "STU039", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Moses Baraka", id: "STU040", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kennedy Mutitu", id: "STU041", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Deng makuie", id: "STU042", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Janelle yangi", id: "STU043", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Rael Malima", id: "STU044", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Gabriella zahra", id: "STU045", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Jean Mellan", id: "STU046", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Angel Maina", id: "STU047", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Rael Manyala", id: "STU048", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Blessing", id: "STU049", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Zarya", id: "STU050", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Alma", id: "STU051", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Anai", id: "STU052", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tiffany Moraa", id: "STU053", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Sanita", id: "STU088", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tamara Sylvia", id: "STU054", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Rutembesa", id: "STU055", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Anyieth", id: "STU056", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Elyne", id: "STU057", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Abby", id: "STU058", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Esnas", id: "STU059", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Jemimah", id: "STU060", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Vivian", id: "STU061", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Gloria", id: "STU062", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Adua", id: "STU063", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Madeline", id: "STU064", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Natalie", id: "STU065", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tinashia", id: "STU066", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kiki", id: "STU067", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Fortune", id: "STU068", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Zawadi", id: "STU069", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Ehsani", id: "STU070", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        // Page 3
+        { name: "Jonathan", id: "STU071", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Emmanuel", id: "STU072", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Adrian Malala", id: "STU073", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Booker", id: "STU074", class: "10A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Shreya", id: "STU075", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "John", id: "STU076", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Taraji", id: "STU077", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Makonna", id: "STU078", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Hera", id: "STU079", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Shazia", id: "STU080", class: "10B", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Khusalya", id: "STU081", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Abigael Tibo", id: "STU082", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Jason", id: "STU083", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Nolan", id: "STU084", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Liam", id: "STU086", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Miles", id: "STU087", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tiffany", id: "STU089", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Maya", id: "STU090", class: "8A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Beatrice", id: "STU091", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Layla", id: "STU092", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Teko", id: "STU093", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Akshar", id: "STU094", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Fadhili", id: "STU095", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Prabath", id: "STU096", class: "9A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Jayden Ngesa", id: "STU097", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Hadassa", id: "STU099", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Tukuza", id: "STU100", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Joshua", id: "STU101", class: "7A", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Pima", id: "STU102", class: "9A", hasVoted: false, registrationDate: "2026-02-27" }
+      ],
+      staff: [
+        // Page 3-4
+        { name: "Christine", id: "STA002", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Wanyonyi", id: "STA003", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Irene", id: "STA005", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Dee", id: "STA007", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Mutune", id: "STA023", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Celestino", id: "STA024", hasVoted: true, registrationDate: "2026-02-27" },
+        { name: "Steve", id: "STA001", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Collins", id: "STA004", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Mutisya", id: "STA006", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Moraa", id: "STA008", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Sylvia", id: "STA009", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Ivy", id: "STA010", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Japheth", id: "STA011", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Florence", id: "STA012", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Rabin", id: "STA013", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Nikita", id: "STA014", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Jacques", id: "STA015", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Eunice", id: "STA016", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kinyanjiu", id: "STA017", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Otieno", id: "STA018", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Gichuru", id: "STA019", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Dennis", id: "STA020", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Virginia", id: "STA021", hasVoted: false, registrationDate: "2026-02-27" },
+        { name: "Kasanga", id: "STA022", hasVoted: false, registrationDate: "2026-02-27" }
+      ]
     };
     
     let candidates = {};
@@ -2570,9 +2702,9 @@
     let systemConfig = {
       theme: 'forest',
       title: 'Lukenya Voting System',
-      subtitle: 'British Curriculum Student Council Elections 2024',
+      subtitle: 'British Curriculum Student Council Elections 2026',
       welcomeText: 'WELCOME TO LUKENYA',
-      electionTitle: 'STUDENT COUNCIL ELECTION 2024',
+      electionTitle: 'STUDENT COUNCIL ELECTION 2026',
       electionDate: moment().format('YYYY-MM-DD'),
       votingStart: '08:00',
       votingDuration: 8,
@@ -2597,6 +2729,30 @@
       requireStrongPasswords: true,
       enableAuditLog: true,
       logLevel: 'info'
+    };
+    
+    // NEW CANDIDATES FROM PDF
+    const newCandidatesFromPDF = {
+      "Boys' Sports and Co-curriculum": [
+        { name: "Edmund Munyoki", addedDate: "2026-02-27" },
+        { name: "Trevor Amani", addedDate: "2026-02-27" }
+      ],
+      "Girls' Sports and Co-curriculum": [
+        { name: "Gabriella Zahra", addedDate: "2026-02-27" },
+        { name: "Aduu Bol", addedDate: "2026-02-27" }
+      ],
+      "Boys' Chapel": [
+        { name: "Baraka Owino", addedDate: "2026-02-27" },
+        { name: "Tim Mburu", addedDate: "2026-02-27" }
+      ],
+      "Girl Environment": [
+        { name: "Zawadi Makamu", addedDate: "2026-02-27" },
+        { name: "Zarya", addedDate: "2026-02-27" }
+      ],
+      "Boy Environment": [
+        { name: "Chris Linus", addedDate: "2026-02-27" },
+        { name: "Zachary Mbithi", addedDate: "2026-02-27" }
+      ]
     };
     
     // State Variables
@@ -2629,7 +2785,43 @@
         if (!votes[pos]) votes[pos] = {};
         if (!maxVotes[pos]) maxVotes[pos] = 0;
       });
+      
+      // Add new candidates from PDF
+      addNewCandidatesFromPDF();
+      
       console.log('Data structures initialized with', positions.length, 'positions');
+      console.log('Candidates loaded:', Object.keys(candidates).reduce((sum, pos) => sum + candidates[pos].length, 0));
+      console.log('Voters loaded:', voters.student.length, 'students,', voters.staff.length, 'staff');
+    }
+    
+    function addNewCandidatesFromPDF() {
+      // For each position in newCandidatesFromPDF
+      Object.keys(newCandidatesFromPDF).forEach(position => {
+        // Check if the position exists in positions array
+        if (!positions.includes(position)) {
+          // Add the position if it doesn't exist
+          positions.push(position);
+          candidates[position] = [];
+          votes[position] = {};
+          maxVotes[position] = 0;
+        }
+        
+        // Add each candidate to the position
+        newCandidatesFromPDF[position].forEach(candidate => {
+          // Check if candidate already exists
+          const exists = candidates[position].some(
+            c => c.name.toLowerCase() === candidate.name.toLowerCase()
+          );
+          
+          if (!exists) {
+            candidates[position].push(candidate);
+            // Set initial votes to 1 as per PDF results
+            votes[position][candidate.name] = 1;
+            allCandidateNames.add(candidate.name.toLowerCase());
+            console.log(`Added candidate: ${candidate.name} to ${position} with 1 vote`);
+          }
+        });
+      });
     }
     
     function loadData() {
@@ -4571,6 +4763,7 @@
       
       console.log(`${APP_NAME} v${APP_VERSION} initialized successfully`);
       console.log('Available color themes:', Object.keys(COLOR_THEMES).length);
+      console.log('New candidates from PDF added:', Object.keys(newCandidatesFromPDF).length, 'positions');
     };
     
     // ========== ELECTION SETTINGS SAVE ==========
@@ -4635,7 +4828,7 @@
     window.downloadDeveloperCV = downloadDeveloperCV;
     window.changeTheme = changeTheme;
     window.saveTheme = saveTheme;
-    window.saveElectionSettings = saveElectionSettings; // <-- ADDED missing function
+    window.saveElectionSettings = saveElectionSettings;
   </script>
 </body>
 </html>
